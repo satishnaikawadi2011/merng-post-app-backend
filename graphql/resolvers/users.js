@@ -71,7 +71,7 @@ module.exports = {
 				email,
 				password,
 				username,
-				createdAt : new Date().toDateString()
+				createdAt : new Date().toISOString()
 			});
 			const res = await newUser.save();
 
